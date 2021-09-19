@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="left">
+        <h2>Learn to code by watching others</h2>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right">
+        <div class="trial">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form id="form" action="/">
+          <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            class="firstname"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            class="lastname"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="email"
+            placeholder="Email Address"
+            required
+          />
+          <div id="error" class="error hide">
+            <img src="./images/icon-error.svg" alt="error" />
+            <span>Looks like you've entered wrong email.</span>
+          </div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password"
+            placeholder="Password"
+            required
+          />
+          <button>Claim your free trial</button>
+          <div class="terms">
+            <p>
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

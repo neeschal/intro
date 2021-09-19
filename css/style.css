@@ -1,0 +1,147 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+  color: #faf3f3;
+}
+
+p {
+  color: #dbdae7;
+}
+
+.error {
+  position: relative;
+  color: #ff7a7a;
+  margin-top: -1rem;
+  font-size: 0.9rem;
+}
+
+.error img {
+  position: absolute;
+  top: -155%;
+  right: 7%;
+}
+
+.hide {
+  display: none;
+}
+
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.main-container .left h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.main-container .right .trial {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 0 rgba(10, 10, 10, 0.199);
+          box-shadow: 0 6px 0 rgba(10, 10, 10, 0.199);
+  margin-bottom: 1.5rem;
+}
+
+.main-container .right .trial p {
+  background-color: #6055a5;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+}
+
+.main-container .right .trial p span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.main-container .right form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 0 6px 0 rgba(10, 10, 10, 0.288);
+          box-shadow: 0 6px 0 rgba(10, 10, 10, 0.288);
+}
+
+.main-container .right form input {
+  width: 85%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #dbdae7;
+  margin-bottom: 1rem;
+}
+
+.main-container .right form input::-webkit-input-placeholder {
+  font-weight: bold;
+}
+
+.main-container .right form input:-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.main-container .right form input::-ms-input-placeholder {
+  font-weight: bold;
+}
+
+.main-container .right form input::placeholder {
+  font-weight: bold;
+}
+
+.main-container .right form button {
+  width: 95%;
+  -webkit-box-shadow: 0 3px 1px #726e6e;
+          box-shadow: 0 3px 1px #726e6e;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #38cc8c;
+  border: none;
+  padding: 1.5rem;
+}
+
+.main-container .right form .terms p {
+  width: 85%;
+  margin: 1rem auto 0 auto;
+  color: #b2b1b9;
+  font-size: 0.7rem;
+}
+
+.main-container .right form .terms p span {
+  color: #ff7a7a;
+}
+
+@media screen and (min-width: 770px) {
+  .main-container {
+    width: 70%;
+    margin: 5rem auto 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5rem;
+  }
+  .main-container .left {
+    margin-top: 10%;
+    width: 50%;
+    text-align: left;
+  }
+  .main-container .left h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .main-container .left p {
+    width: 90%;
+  }
+  .main-container .right {
+    width: 45%;
+  }
+  .main-container .right .trial p {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

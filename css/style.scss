@@ -1,0 +1,130 @@
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(245, 21%, 88%);
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  color: rgb(250, 243, 243);
+}
+p {
+  color: $Grayish-Blue;
+}
+
+.error {
+  position: relative;
+  color: $Red;
+  margin-top: -1rem;
+  font-size: 0.9rem;
+  img {
+    position: absolute;
+    top: -155%;
+    right: 7%;
+  }
+}
+.hide {
+  display: none;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  .left {
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+
+  .right {
+    .trial {
+      border-radius: 10px;
+      box-shadow: 0 6px 0 rgba(10, 10, 10, 0.199);
+      margin-bottom: 1.5rem;
+      p {
+        background-color: $Blue;
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        span {
+          color: white;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    form {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem 1rem;
+      margin-bottom: 5rem;
+      box-shadow: 0 6px 0 rgba(10, 10, 10, 0.288);
+      input {
+        width: 85%;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid $Grayish-Blue;
+        margin-bottom: 1rem;
+        &::placeholder {
+          font-weight: bold;
+        }
+      }
+      button {
+        width: 95%;
+        box-shadow: 0 3px 1px rgb(114, 110, 110);
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        background-color: $Green;
+        border: none;
+        padding: 1.5rem;
+      }
+      .terms {
+        p {
+          width: 85%;
+          margin: 1rem auto 0 auto;
+          color: hsl(248, 5%, 71%);
+          font-size: 0.7rem;
+          span {
+            color: $Red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .main-container {
+    width: 70%;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    gap: 5rem;
+    .left {
+      margin-top: 10%;
+      width: 50%;
+      text-align: left;
+
+      h2 {
+        font-weight: 800;
+        font-size: 2.5rem;
+        width: 80%;
+      }
+      p {
+        width: 90%;
+      }
+    }
+    .right {
+      width: 45%;
+      .trial {
+        p {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
